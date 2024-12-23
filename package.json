@@ -9,11 +9,14 @@
     "preview": "npx nuxthub preview",
     "deploy": "npx nuxthub deploy",
     "postinstall": "nuxt prepare",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "trigger:dev": "bunx trigger.dev dev",
+    "trigger:deploy": "bunx trigger.dev deploy"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.6.1",
     "@nuxthub/core": "^0.8.5",
+    "@trigger.dev/sdk": "^3.3.7",
     "nuxt": "^3.14.0",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5"

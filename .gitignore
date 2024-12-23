@@ -5,6 +5,7 @@
 .nitro
 .cache
 .wrangler
+.trigger
 dist
 
 # Node dependencies

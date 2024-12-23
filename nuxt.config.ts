@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   // Env variables - https://nuxt.com/docs/getting-started/configuration#environment-variables-and-private-tokens
   runtimeConfig: {
     trigger: {
-      secretKey: ''
+      secretKey: '',
     },
     public: {
       // Can be overridden by NUXT_PUBLIC_HELLO_TEXT environment variable
@@ -22,6 +22,9 @@ export default defineNuxtConfig({
   // https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
   future: { compatibilityVersion: 4 },
   compatibilityDate: '2024-07-30',
+  nitro: {
+    preset: 'cloudflare-pages',
+  },
 
   // https://hub.nuxt.com/docs/getting-started/installation#options
   hub: {},
